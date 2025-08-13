@@ -91,8 +91,8 @@ go install github.com/wailsapp/wails/v2/cmd/wails@latest
 
 ```bash
 # Clone the repository
-git clone https://github.com/devmoisa/brolingo-playground.git
-cd brolingo-playground
+git clone https://github.com/devMoisa/tool.runGo.git
+cd tool.runGo
 
 # Install dependencies / generate bindings
 wails build
@@ -201,7 +201,7 @@ tool.runGo/
 
 ```bash
 # Fork & clone
-git clone https://github.com/yourusername/brolingo-playground.git
+git clone https://github.com/devMoisa/tool.runGo.git
 
 # Create feature branch
 git checkout -b feature/amazing-feature
@@ -271,11 +271,11 @@ git push origin feature/amazing-feature
 
 ### Issues & Feedback
 
-Found a bug? Have a suggestion? Open an [issue](https://github.com/devmoisa/brolingo-playground/issues) or get in touch!
+Found a bug? Have a suggestion? Open an [issue](https://github.com/devMoisa/tool.runGo/issues) or get in touch!
 
 ### Documentation
 
-- Wiki: [Project Wiki](https://github.com/devmoisa/brolingo-playground/wiki)
+- Wiki: [Project Wiki](https://github.com/devMoisa/tool.runGo/wiki)
 - Videos: [Video Tutorials](https://youtube.com/devmoisa)
 - Blog: [Blog Posts](https://blog.belmosoft.com)
 
