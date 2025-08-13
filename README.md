@@ -1,6 +1,8 @@
 # 🚀 run.GO - Playground
 
 ![run.GO - Playground](docs/runGo.webp)
+</br>
+![run.GO - Software](docs/helloRunGo.png)
 
 > A modern, AI-powered Go development playground for desktop
 
