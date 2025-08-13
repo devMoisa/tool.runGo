@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(mv:*)",
+      "Bash(npm install:*)",
+      "Bash(wails build:*)",
+      "Bash(rm:*)",
+      "Bash(open build/bin/brolinGo.software.app)",
+      "Bash(npm uninstall:*)",
+      "Bash(grep:*)",
+      "Bash(for file in *.json)",
+      "Bash(do echo \"Processing $file...\")",
+      "Bash(sed:*)",
+      "Bash(echo:*)",
+      "Bash(done)",
+      "Bash(python3:*)",
+      "Bash(wails generate:*)",
+      "Bash(sips:*)",
+      "Bash(iconutil:*)"
+    ],
+    "deny": []
+  }
+}

@@ -1,6 +1,8 @@
-# 🚀 BrolinGo Playground
+# 🚀 run.GO - Playground
 
-> **Um ambiente de desenvolvimento Go moderno e inteligente com IA integrada**
+![run.GO - Playground](docs/runGo.webp)
+
+> A modern, AI-powered Go development playground for desktop
 
 [![Go Version](https://img.shields.io/badge/Go-1.23-00ADD8?style=for-the-badge&logo=go)](https://golang.org/)
 [![Wails](https://img.shields.io/badge/Wails-v2.10-FF6B35?style=for-the-badge&logo=wails)](https://wails.io/)
@@ -8,68 +10,76 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 [![OpenAI](https://img.shields.io/badge/OpenAI-GPT--3.5-412991?style=for-the-badge&logo=openai)](https://openai.com/)
 
-**BrolinGo Playground** é uma aplicação desktop inovadora que revoluciona o aprendizado e desenvolvimento em Go, combinando um playground interativo com inteligência artificial para criar a experiência de coding mais intuitiva possível.
+run.GO Playground is a desktop application that elevates learning and building in Go by combining an interactive playground with integrated AI, delivering a fast and intuitive coding experience.
 
 ---
 
-## 🎯 **Por que BrolinGo?**
+## 🎯 Why run.GO?
 
-### 🧠 **IA Integrada & Contextual**
-- Chat inteligente com **contexto completo** do seu código
-- Análise automática de erros e sugestões de correção
-- Explicações didáticas personalizadas para cada exemplo
-- **OpenAI GPT-3.5** integrado nativamente
+### 🧠 Integrated, Context-Aware AI
 
-### 📚 **Sistema de Exemplos Avançado**
-- **11+ exemplos completos** de Go com documentação rica
-- **Workspace personalizado** - crie seus próprios exemplos
-- Exportação e compartilhamento de exemplos
-- Categorização inteligente e busca avançada
+- Smart chat with full context of your code
+- Automatic error analysis and fix suggestions
+- Personalized explanations for every example
+- Native OpenAI GPT-3.5 integration
 
-### 🎨 **Interface Moderna & Intuitiva**
-- **Monaco Editor** com IntelliSense completo para Go
-- **Tema Dracula** profissional e amigável aos olhos
-- **Layout responsivo** com painéis redimensionáveis
-- **Chat lateral** integrado para consultas rápidas
+### 📚 Advanced Examples System
 
-### ⚡ **Performance & Produtividade**
-- **Compilação e execução** instantânea
-- **Formatação automática** com `gofmt`
-- **Console auto-hide** inteligente
-- **Atalhos de teclado** otimizados
+- 11+ complete Go examples with rich documentation
+- Custom workspace – create and organize your own examples
+- Export and share examples easily
+- Smart categorization and advanced search
 
----
+### 🎨 Modern, Intuitive Interface
 
-## 🏗️ **Arquitetura & Tecnologias**
+- Monaco Editor with full IntelliSense for Go
+- Dracula theme for comfortable, professional visuals
+- Responsive layout with resizable panels
+- Side chat integrated for quick queries
 
-### **Frontend**
-- **React 18** + **TypeScript** para UI reativa
-- **Monaco Editor** para edição de código profissional
-- **Lucide Icons** para iconografia moderna
-- **Tailwind CSS** para estilização eficiente
+### ⚡ Performance & Productivity
 
-### **Backend**
-- **Go 1.23** para performance máxima
-- **Wails v2** para integração desktop nativa
-- **OpenAI API** para inteligência artificial
-- **File System API** para workspace personalizado
-
-### **Integração**
-- **Hot Module Replacement** para desenvolvimento ágil
-- **Cross-platform** (Windows, macOS, Linux)
-- **Native OS dialogs** para melhor UX
-- **LocalStorage** para persistência de configurações
+- Instant compile and run
+- Auto-formatting with `gofmt`
+- Smart auto-hide console
+- Optimized keyboard shortcuts
 
 ---
 
-## 📥 **Download & Instalação**
+## 🏗️ Architecture & Technologies
 
-### **Pré-requisitos**
+### Frontend
+
+- React 18 + TypeScript for reactive UI
+- Monaco Editor for a professional coding experience
+- Lucide Icons for modern iconography
+- Tailwind CSS for efficient styling
+
+### Backend
+
+- Go 1.23 for maximum performance
+- Wails v2 for native desktop integration
+- OpenAI API for AI features
+- File System API for custom workspace support
+
+### Integration
+
+- Hot Module Replacement for rapid development
+- Cross-platform (Windows, macOS, Linux)
+- Native OS dialogs for better UX
+- LocalStorage for settings persistence
+
+---
+
+## 📥 Download & Installation
+
+### Prerequisites
+
 ```bash
-# Go 1.23 ou superior
+# Go 1.23+
 go version
 
-# Node.js 16+ e npm
+# Node.js 16+ and npm
 node --version
 npm --version
 
@@ -77,106 +87,118 @@ npm --version
 go install github.com/wailsapp/wails/v2/cmd/wails@latest
 ```
 
-### **Clone & Setup**
+### Clone & Setup
+
 ```bash
-# Clone o repositório
+# Clone the repository
 git clone https://github.com/devmoisa/brolingo-playground.git
 cd brolingo-playground
 
-# Instale dependências
+# Install dependencies / generate bindings
 wails build
 
-# Ou para desenvolvimento
+# Or for development
 wails dev
 ```
 
-### **Build para Produção**
+### Build for Production
+
 ```bash
-# Build completo para seu OS
+# Build for your OS
 wails build
 
-# Build para múltiplas plataformas
+# Build for multiple platforms
 wails build -platform windows/amd64,linux/amd64,darwin/amd64
 ```
 
 ---
 
-## 🚀 **Guia de Uso**
+## 🚀 Getting Started
 
-### **1. Primeiros Passos**
-1. **Abra a aplicação** - Interface intuitiva carrega automaticamente
-2. **Explore exemplos** - 11+ exemplos prontos na sidebar
-3. **Execute código** - `⌘+Enter` ou botão "Run"
-4. **Formate código** - `⌘+F` para formatação automática
+### 1) First steps
 
-### **2. Configuração da IA**
-1. **Abra configurações** - Clique na engrenagem
-2. **Aba OpenAI** - Cole seu API token
-3. **Salve configurações** - Token persistido localmente
-4. **Chat ativo** - Converse sobre seu código em tempo real
+1. Open the app – the interface loads automatically
+2. Explore examples – 11+ ready-to-run examples in the sidebar
+3. Run code – `⌘+Enter` or the Run button
+4. Format code – `⌘+F` to auto-format
 
-### **3. Workspace Personalizado**
-1. **Aba Workspace** - Nas configurações
-2. **Ative workspace** - Toggle para habilitar
-3. **Selecione pasta** - Escolha onde salvar exemplos
-4. **Crie templates** - Botão "Criar Template"
-5. **Compartilhe** - Pasta com JSONs exportáveis
+### 2) AI setup
 
-### **4. Recursos Avançados**
-- **Split-screen** - Documentação + Chat simultâneo
-- **Accordion inteligente** - Maximiza área útil
-- **Auto-hide console** - Aparece apenas quando necessário
-- **Busca semântica** - Encontre exemplos por contexto
+1. Open Settings – click the gear icon
+2. OpenAI tab – paste your API token
+3. Save – token is stored locally
+4. Start chatting – discuss your code in real time
 
----
+### 3) Custom workspace
 
-## 🎨 **Estratégias de Design**
+1. Workspace tab – inside Settings
+2. Enable workspace – toggle it on
+3. Choose a folder – where examples will be saved
+4. Create templates – using the Create Template button
+5. Share – exportable JSON folder
 
-### **UX/UI Principles**
-- **Progressive Disclosure** - Informações reveladas conforme necessário
-- **Contextual Computing** - IA sempre ciente do que você está fazendo  
-- **Spatial Consistency** - Layout que se adapta ao workflow
-- **Cognitive Load Reduction** - Menos cliques, mais produtividade
+### 4) Advanced features
 
-### **Performance Strategies**
-- **Lazy Loading** - Exemplos carregados sob demanda
-- **Debounced Actions** - Otimização de calls da IA
-- **Memory Management** - Cache inteligente de exemplos
-- **Background Processing** - Compilação não-bloqueante
-
-### **Accessibility Features**
-- **Keyboard Navigation** - Totalmente navegável por teclado
-- **High Contrast** - Tema Dracula otimizado
-- **Screen Reader** - Labels semânticos
-- **Responsive Design** - Funciona em diferentes resoluções
+- Split-screen – documentation + chat side by side
+- Smart accordion – maximizes usable space
+- Auto-hide console – appears only when needed
+- Semantic search – find examples by context
 
 ---
 
-## 🛠️ **Desenvolvimento**
+## 🎨 Design Strategies
 
-### **Structure Overview**
+### UX/UI Principles
+
+- Progressive disclosure – reveal information as needed
+- Contextual computing – AI is always aware of what you are doing
+- Spatial consistency – the layout adapts to your workflow
+- Cognitive load reduction – fewer clicks, more productivity
+
+### Performance Strategies
+
+- Lazy loading – load examples on demand
+- Debounced actions – optimize AI calls
+- Memory management – smart example caching
+- Background processing – non-blocking compilation
+
+### Accessibility Features
+
+- Keyboard navigation – fully keyboard accessible
+- High contrast – Dracula theme optimized
+- Screen reader – semantic labels
+- Responsive design – works across different resolutions
+
+---
+
+## 🛠️ Development
+
+### Structure Overview
+
 ```
-brolinGo.software/
+tool.runGo/
 ├── app.go                  # Wails app entry point
 ├── internal/app/           # Core Go backend
-│   └── app.go             # Business logic & API endpoints
-├── frontend/              # React frontend
+│   └── app.go              # Business logic & API endpoints
+├── frontend/               # React frontend
 │   ├── src/
-│   │   ├── App.tsx        # Main application component
-│   │   ├── examples.ts    # Examples management
+│   │   ├── App.tsx         # Main application component
+│   │   ├── examples.ts     # Examples management
 │   │   └── goIntellisense.ts # Monaco Go support
-│   └── public/examples/   # Default examples JSON
-├── wailsjs/               # Auto-generated bindings
-└── build/                 # Compiled outputs
+│   └── public/examples/    # Default examples JSON
+├── wailsjs/                # Auto-generated bindings
+└── build/                  # Compiled outputs
 ```
 
-### **Key Components**
-- **`App.tsx`** - Main React component with all UI logic
-- **`examples.ts`** - Example loading and management system
-- **`app.go`** - Backend API with file system operations
-- **Monaco Integration** - Custom Go language support
+### Key Components
 
-### **Contributing**
+- `App.tsx` – main React component and UI logic
+- `examples.ts` – example loading and management
+- `app.go` – backend API and file operations
+- Monaco integration – custom Go language support
+
+### Contributing
+
 ```bash
 # Fork & clone
 git clone https://github.com/yourusername/brolingo-playground.git
@@ -196,140 +218,103 @@ git push origin feature/amazing-feature
 
 ---
 
-## 🎯 **Roadmap**
+## 🎯 Roadmap
 
-### **Version 2.0**
-- [ ] **Multiple Language Support** - Python, Rust, JavaScript
-- [ ] **Cloud Sync** - Sincronize exemplos na nuvem
-- [ ] **Collaborative Editing** - Múltiplos usuários
-- [ ] **Plugin System** - Extensões customizadas
+### Version 2.0
 
-### **Version 1.5**
-- [ ] **Advanced Debugging** - Breakpoints e step-through
-- [ ] **Git Integration** - Controle de versão nativo
-- [ ] **Theme Customization** - Múltiplos temas
-- [ ] **Export Options** - PDF, HTML, Markdown
+- [ ] Multiple language support – Python, Rust, JavaScript
+- [ ] Cloud sync – synchronize examples in the cloud
+- [ ] Collaborative editing – multiple users
+- [ ] Plugin system – custom extensions
 
-### **Version 1.1**
-- [ ] **AI Models Support** - Claude, Gemini, Local LLMs
-- [ ] **Enhanced Examples** - Concorrência, WebServers
-- [ ] **Performance Metrics** - Benchmarking integrado
-- [ ] **Mobile Companion** - App para visualizar código
+### Version 1.5
 
----
+- [ ] Advanced debugging – breakpoints and step-through
+- [ ] Git integration – native version control
+- [ ] Theme customization – multiple themes
+- [ ] Export options – PDF, HTML, Markdown
 
-## 📊 **Métricas & Impacto**
+### Version 1.1
 
-### **Developer Productivity**
-- **73% faster** learning curve para novos conceitos Go
-- **45% reduction** em tempo de debugging
-- **89% satisfaction** rate entre early adopters
-- **2.3x more** exemplos criados vs. ferramentas tradicionais
-
-### **Technical Achievements**
-- **Sub-100ms** compilation feedback
-- **99.9% uptime** para funcionalidades core
-- **Zero crashes** em 1000+ horas de teste
-- **Cross-platform** compatibility garantida
+- [ ] AI models support – Claude, Gemini, local LLMs
+- [ ] Enhanced examples – concurrency, web servers
+- [ ] Performance metrics – integrated benchmarking
+- [ ] Mobile companion – view code on the go
 
 ---
 
-## 👨‍💻 **Sobre o Desenvolvedor**
+## 📊 Metrics & Impact
 
-**Moisés Santos** - Full Stack Developer & Go Enthusiast
+### Developer Productivity
 
-Apaixonado por criar ferramentas que realmente impactam a produtividade de desenvolvedores. BrolinGo nasceu da frustração com playgrounds limitados e da visão de que IA deve ser contextual, não genérica.
+- 73% faster learning curve for new Go concepts
+- 45% reduction in debugging time
+- 89% satisfaction rate among early adopters
+- 2.3x more examples created vs. traditional tools
 
-### **Expertise**
-- **8+ anos** em desenvolvimento full-stack
-- **Especialista** em Go, React, TypeScript
-- **Arquiteto** de sistemas distribuídos
-- **Mentor** em tecnologias emergentes
+### Technical Achievements
 
-### **Projetos Destacados**
-- **BrolinGo Playground** - IDE inteligente para Go
-- **MicroServices Framework** - Go + Docker + K8s
-- **Real-time Analytics** - WebSockets + React
-- **DevOps Automation** - CI/CD pipelines
+- Sub-100ms compilation feedback
+- 99.9% uptime for core features
+- Zero crashes over 1000+ hours of testing
+- Guaranteed cross-platform compatibility
 
 ---
 
-## 🤝 **Suporte & Comunidade**
+## 🤝 Support & Community
 
-### **Links Importantes**
-- 📧 **Email**: [contato@belmosoft.com](mailto:contato@belmosoft.com)
-- 💼 **LinkedIn**: [linkedin.com/in/devmoisa](https://www.linkedin.com/in/devmoisa)
-- 🐱 **GitHub**: [github.com/devmoisa](https://github.com/devmoisa)
-- 🐦 **Twitter**: [@devmoisa](https://twitter.com/devmoisa)
+### Important Links
 
-### **Issues & Feedback**
-Encontrou um bug? Tem uma sugestão? Abra uma [issue](https://github.com/devmoisa/brolingo-playground/issues) ou entre em contato!
+- Email: [moisesboas@gmail.com](mailto:moisesboas@gmail.com)
+- LinkedIn: [linkedin.com/in/devmoisa](https://www.linkedin.com/in/devmoisa)
+- GitHub: [github.com/devmoisa](https://github.com/devmoisa)
 
-### **Documentation**
-- 📚 [Wiki Completo](https://github.com/devmoisa/brolingo-playground/wiki)
-- 🎥 [Video Tutorials](https://youtube.com/devmoisa)
-- 📝 [Blog Posts](https://blog.belmosoft.com)
+### Issues & Feedback
+
+Found a bug? Have a suggestion? Open an [issue](https://github.com/devmoisa/brolingo-playground/issues) or get in touch!
+
+### Documentation
+
+- Wiki: [Project Wiki](https://github.com/devmoisa/brolingo-playground/wiki)
+- Videos: [Video Tutorials](https://youtube.com/devmoisa)
+- Blog: [Blog Posts](https://blog.belmosoft.com)
 
 ---
 
-## ☕ **Apoie o Projeto**
+## ☕ Support the Project
 
-Gostou do BrolinGo? Ele mudou sua forma de aprender Go? 
+Do you like run.GO? Did it change the way you learn Go?
 
-**Considere oferecer um café para apoiar o desenvolvimento contínuo!**
+Consider buying a coffee to support ongoing development!
 
 [![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-☕-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/devmoisa)
 
-### **Por que apoiar?**
-- ⚡ **Desenvolvimento mais rápido** de novas features
-- 🐛 **Correções prioritárias** de bugs reportados
-- 📚 **Mais exemplos** e tutoriais
-- 🤖 **IA mais avançada** e modelos premium
-- 🎨 **Interface ainda melhor**
+### Why support?
 
-### **Outras formas de apoiar:**
-- ⭐ **Star o repositório** no GitHub
-- 🐦 **Compartilhe** nas redes sociais
-- 📝 **Escreva reviews** e feedbacks
-- 🤝 **Contribua** com código
-- 💡 **Sugira features** novas
+- Faster development of new features
+- Prioritized bug fixes
+- More examples and tutorials
+- More advanced AI and premium models
+- Even better interface
+
+### Other ways to support
+
+- Star the repository on GitHub
+- Share on social media
+- Write reviews and feedback
+- Contribute code
+- Suggest new features
 
 ---
 
-## 📜 **Licença**
+## 📜 License
 
-Este projeto está licenciado sob a **MIT License** - veja o arquivo [LICENSE](LICENSE) para detalhes.
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
 
 ```
-MIT License - Copyright (c) 2024 Moisés Santos
+MIT License (c) 2024 Moisés Santos
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction...
 ```
-
----
-
-## 🙏 **Agradecimentos**
-
-- **Wails Team** - Por tornar desktop apps em Go possíveis
-- **Monaco Editor** - Pelo melhor editor web do mundo
-- **OpenAI** - Por democratizar IA para desenvolvedores
-- **Go Community** - Por criar uma linguagem fantástica
-- **Early Adopters** - Por feedback valioso e paciência
-
----
-
-<div align="center">
-
-**Feito com ❤️ por [Moisés Santos](https://linkedin.com/in/devmoisa)**
-
-*"Code is poetry, and every developer deserves the best tools to express it."*
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/devmoisa)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/devmoisa)
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/devmoisa)
-
-</div>
-# runGo.software
-# tool.runGo
