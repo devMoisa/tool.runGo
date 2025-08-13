@@ -1,0 +1,9 @@
+{
+  "id": "hello-world",
+  "title": "Hello World",
+  "description": "First program in Go",
+  "category": "Basics",
+  "tags": ["basic", "first", "hello"],
+  "instruction": "# Hello World in Go\n\n## What is this example?\n\nThis is the **first program** every Go developer writes! It's a tradition in programming - we always start with \"Hello World\" to verify everything is working.\n\n## How does it work?\n\n### 1. Package Declaration\n```go\npackage main\n```\n- Every Go file must belong to a **package**\n- `main` is a special package - it indicates this is an executable program\n- Without `package main`, your code would just be a library\n\n### 2. Import Statement\n```go\nimport \"fmt\"\n```\n- `fmt` is Go's formatting package\n- Contains functions like `Println`, `Printf`, `Sprintf`\n- It's part of Go's standard library\n\n### 3. Main Function\n```go\nfunc main() {\n    // your code here\n}\n```\n- **Entry point** of the program\n- Go looks for this function to start execution\n- Without `main()`, the program won't run\n\n### 4. Print Statement\n```go\nfmt.Println(\"Hello, World!\")\n```\n- `Println` = \"Print Line\" (prints and breaks line)\n- Automatically adds `\\n` at the end\n- Different from `Print` which doesn't break line\n\n## Try modifying\n\n- Change the message to your name\n- Add more lines with `fmt.Println`\n- Use `fmt.Printf` with formatting: `fmt.Printf(\"Hello, %s!\\n\", \"your name\")`\n\n## Next steps\n\nAfter mastering Hello World, you can:\n- Learn about **variables**\n- Explore **data types**\n- Create your first **functions**\n\n---\n*💡 Tip: Use Ctrl+Enter to run code quickly!*",
+  "code": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n    fmt.Println(\"Welcome to Go!\")\n}"
+}
